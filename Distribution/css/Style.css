@@ -1,0 +1,158 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #2bec6c;
+  }
+
+  .welcome_form input,
+  .welcome_form button{
+      display: block;
+      width: 100%;
+  }
+
+  .welcome_form input{
+      margin-bottom: 15px;
+      background-color: transparent;
+      border: none;
+      color: white;
+      font-size: 30px;
+      text-align: center;
+      border-bottom: 2px solid #fff;
+  }
+
+  .welcome_form button{
+      font-size: 22px;
+      padding: 20px 0;
+      border: none;
+      background: #ffff;
+      border-radius: 50px;
+      color:  #2bec6c;
+      transition: 0.4ms all;
+  }
+  
+  .welcome_form button:hover{
+      transform: translateY(-5px);
+      cursor: pointer;
+  }
+
+ /* ----removing_outline-- */
+  .welcome_form input:focus,
+  .welcome_form button:focus{
+      outline: none;
+
+  }
+
+  /*  designing Quizes..!! */
+
+  .Quiz{
+      
+      display: grid;
+      grid-template-rows: 70px auto;
+      border-radius: 3px;
+      height: 500px;
+      width: 800px;
+     background-color: #fff;
+
+  }
+
+  .Quiz_header{
+    display: flex;
+    /* for spacing betwen the contents */
+    justify-content: space-between;
+      border-top-left-radius: 3px;
+      border-top-right-radius: 3px;
+     background-color: #fff;
+     box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.3);
+     z-index: 1;
+  }
+
+  .Quiz_Body{
+    padding: 30px;
+    background-color: #ecf0f1;
+    
+  }
+
+  .Quiz_Name{
+      display: flex;
+      align-items: center;
+      padding-left: 30px;
+  }
+
+  .Quiz_Timer{
+      display: flex;
+      align-items: center;
+      background-color: #2bec6c;
+      color: #fff;
+      padding: 0 30px;
+  }
+
+/* Designing options */
+
+  .Option_Group{
+     list-style: none;
+     margin: 30px 0;
+  }
+
+  .Option{
+      background-color: #fff;
+      width: 400px;
+      padding: 15px 20px;
+      margin-bottom: 15px;
+      border-radius: 100px;
+      border: 2px solid transparent  ;
+      
+  }
+
+  .Option:hover{
+      cursor: pointer;
+      border: 2px solid  #2bec6c ;
+      color: #2bec6c;
+  }
+
+/* Designing next button  */
+
+  .Next_Button{
+      background-color:#2bec6c ;
+      color: #ffff ;
+      padding: 15px;
+      width: 200px;
+      border-radius: 25px;
+      border: none;
+      transition: 00.4ms;
+     
+
+  }
+
+  .Next_Button:hover{
+      cursor: pointer;
+      background-color:#ffff ;
+      color: #2bec6c ;
+      box-shadow: 0px 0px 20px 2px ;
+
+  }
+
+  /* making actve class */
+  .active{
+      background-color: #2bec6c;
+  /* overriding color */
+      color: #fff !important; 
+  }
+
+  /* last page design */
+.user_name,
+.user_points,
+.user_time{
+color: #fff;
+text-align: center;
+margin-top: 15px;
+}
+    
